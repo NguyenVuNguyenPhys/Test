@@ -92,19 +92,19 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  },
  {
   "fieldOfViewOverlayOutsideColor": "#000000",
-  "thumbnailUrl": "media/map_8263CE9D_890F_9333_41CC_0A8BB8CF4141_t.png",
+  "thumbnailUrl": "media/map_8570B11B_8912_7137_41D7_155C6CFFD1A1_t.png",
   "image": {
    "levels": [
     {
      "height": 652,
      "width": 1021,
-     "url": "media/map_8263CE9D_890F_9333_41CC_0A8BB8CF4141.png",
+     "url": "media/map_8570B11B_8912_7137_41D7_155C6CFFD1A1.png",
      "class": "ImageResourceLevel"
     },
     {
      "height": 326,
      "width": 510,
-     "url": "media/map_8263CE9D_890F_9333_41CC_0A8BB8CF4141_lq.png",
+     "url": "media/map_8570B11B_8912_7137_41D7_155C6CFFD1A1_lq.png",
      "class": "ImageResourceLevel",
      "grayscale": true
     }
@@ -118,7 +118,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "fieldOfViewOverlayInsideColor": "#FFFFFF",
   "fieldOfViewOverlayInsideOpacity": 0.4,
   "width": 1021,
-  "id": "map_8263CE9D_890F_9333_41CC_0A8BB8CF4141",
+  "id": "map_8570B11B_8912_7137_41D7_155C6CFFD1A1",
   "maximumZoomFactor": 1.2,
   "height": 652,
   "minimumZoomFactor": 0.5,
@@ -132,13 +132,13 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "viewerArea": "this.MapViewer"
  },
  {
-  "id": "playList_85B9ED32_8912_9170_41C1_0E7FA6AAD0E2",
+  "id": "playList_853A9799_8912_9133_4192_9D0FFA3F018A",
   "class": "PlayList",
   "items": [
    {
     "player": "this.MapViewerMapPlayer",
     "class": "MapPlayListItem",
-    "media": "this.map_8263CE9D_890F_9333_41CC_0A8BB8CF4141",
+    "media": "this.map_8570B11B_8912_7137_41D7_155C6CFFD1A1",
     "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')"
    }
   ]
@@ -305,8 +305,8 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "playbackBarHeadShadow": true,
   "playbackBarProgressBorderColor": "#000000",
   "toolTipPaddingRight": 6,
-  "width": 400,
-  "height": 255,
+  "width": 1021,
+  "height": 652,
   "minHeight": 1,
   "playbackBarHeadBorderRadius": 0,
   "progressLeft": 0,
@@ -445,7 +445,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "id": "rootPlayer",
  "paddingTop": 0,
  "minWidth": 20,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_85B9ED32_8912_9170_41C1_0E7FA6AAD0E2.set('selectedIndex', 0)",
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_853A9799_8912_9133_4192_9D0FFA3F018A.set('selectedIndex', 0)",
  "verticalAlign": "top",
  "scrollBarVisible": "rollOver"
 })
