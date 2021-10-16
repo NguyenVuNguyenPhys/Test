@@ -92,19 +92,19 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  },
  {
   "fieldOfViewOverlayOutsideColor": "#000000",
-  "thumbnailUrl": "media/map_8299C6C7_88F2_9310_41C8_0801BE395E12_t.png",
+  "thumbnailUrl": "media/map_8263CE9D_890F_9333_41CC_0A8BB8CF4141_t.png",
   "image": {
    "levels": [
     {
      "height": 652,
      "width": 1021,
-     "url": "media/map_8299C6C7_88F2_9310_41C8_0801BE395E12.png",
+     "url": "media/map_8263CE9D_890F_9333_41CC_0A8BB8CF4141.png",
      "class": "ImageResourceLevel"
     },
     {
      "height": 326,
      "width": 510,
-     "url": "media/map_8299C6C7_88F2_9310_41C8_0801BE395E12_lq.png",
+     "url": "media/map_8263CE9D_890F_9333_41CC_0A8BB8CF4141_lq.png",
      "class": "ImageResourceLevel",
      "grayscale": true
     }
@@ -118,7 +118,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "fieldOfViewOverlayInsideColor": "#FFFFFF",
   "fieldOfViewOverlayInsideOpacity": 0.4,
   "width": 1021,
-  "id": "map_8299C6C7_88F2_9310_41C8_0801BE395E12",
+  "id": "map_8263CE9D_890F_9333_41CC_0A8BB8CF4141",
   "maximumZoomFactor": 1.2,
   "height": 652,
   "minimumZoomFactor": 0.5,
@@ -132,13 +132,13 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "viewerArea": "this.MapViewer"
  },
  {
-  "id": "playList_83EE8237_88F7_B370_41AD_17C7F1FEDF9F",
+  "id": "playList_85B9ED32_8912_9170_41C1_0E7FA6AAD0E2",
   "class": "PlayList",
   "items": [
    {
     "player": "this.MapViewerMapPlayer",
     "class": "MapPlayListItem",
-    "media": "this.map_8299C6C7_88F2_9310_41C8_0801BE395E12",
+    "media": "this.map_8263CE9D_890F_9333_41CC_0A8BB8CF4141",
     "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')"
    }
   ]
@@ -305,14 +305,14 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "playbackBarHeadShadow": true,
   "playbackBarProgressBorderColor": "#000000",
   "toolTipPaddingRight": 6,
-  "width": "40%",
+  "width": 400,
+  "height": 255,
   "minHeight": 1,
   "playbackBarHeadBorderRadius": 0,
   "progressLeft": 0,
   "toolTipTextShadowOpacity": 0,
   "toolTipFontSize": 12,
   "paddingLeft": 0,
-  "height": "30%",
   "borderSize": 0,
   "playbackBarHeadBorderColor": "#000000",
   "progressBackgroundColorRatios": [
@@ -445,7 +445,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "id": "rootPlayer",
  "paddingTop": 0,
  "minWidth": 20,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_83EE8237_88F7_B370_41AD_17C7F1FEDF9F.set('selectedIndex', 0)",
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_85B9ED32_8912_9170_41C1_0E7FA6AAD0E2.set('selectedIndex', 0)",
  "verticalAlign": "top",
  "scrollBarVisible": "rollOver"
 })
