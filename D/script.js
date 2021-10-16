@@ -133,7 +133,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  },
  {
   "class": "PlayList",
-  "id": "playList_9A4F0681_8937_89A5_41DE_E082F12EE066",
+  "id": "playList_9BD3B33E_8916_BE45_41C6_5B7FA4E15C1F",
   "items": [
    {
     "class": "MapPlayListItem",
@@ -314,7 +314,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "toolTipTextShadowOpacity": 0,
   "toolTipFontStyle": "normal",
   "playbackBarHeadBackgroundColorDirection": "vertical",
-  "width": 400,
+  "width": 570,
   "playbackBarHeadWidth": 6,
   "playbackBarProgressBackgroundColor": [
    "#3399FF"
@@ -322,7 +322,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "playbackBarBackgroundColorDirection": "vertical",
   "shadow": false,
   "progressBarBackgroundColorDirection": "vertical",
-  "height": 255,
+  "height": 363,
   "toolTipShadowHorizontalLength": 0,
   "playbackBarProgressBorderSize": 0,
   "playbackBarRight": 0,
@@ -431,7 +431,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "gap": 10,
  "backgroundPreloadEnabled": true,
  "minWidth": 20,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_9A4F0681_8937_89A5_41DE_E082F12EE066.set('selectedIndex', 0)",
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_9BD3B33E_8916_BE45_41C6_5B7FA4E15C1F.set('selectedIndex', 0)",
  "horizontalAlign": "left",
  "paddingLeft": 0,
  "contentOpaque": false,
