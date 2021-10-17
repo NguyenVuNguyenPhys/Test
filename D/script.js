@@ -128,11 +128,123 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  {
   "movementMode": "constrained",
   "id": "MapViewerMapPlayer",
-  "viewerArea": "this.MapViewer",
+  "viewerArea": {
+   "toolTipShadowOpacity": 1,
+   "playbackBarHeadShadowOpacity": 0.7,
+   "playbackBarBackgroundColor": [
+    "#FFFFFF"
+   ],
+   "paddingRight": 0,
+   "progressBarOpacity": 1,
+   "playbackBarHeight": 10,
+   "playbackBarHeadWidth": 6,
+   "playbackBarProgressBorderSize": 0,
+   "playbackBarHeadShadow": true,
+   "minWidth": 342,
+   "playbackBarBackgroundColorDirection": "vertical",
+   "playbackBarRight": 0,
+   "toolTipPaddingBottom": 4,
+   "progressBackgroundOpacity": 1,
+   "progressBarBorderSize": 0,
+   "shadow": false,
+   "progressBarBorderRadius": 0,
+   "progressBorderRadius": 0,
+   "toolTipFontWeight": "normal",
+   "paddingBottom": 0,
+   "toolTipFontSize": 12,
+   "toolTipShadowVerticalLength": 0,
+   "playbackBarProgressBorderRadius": 0,
+   "toolTipShadowColor": "#333333",
+   "toolTipShadowBlurRadius": 3,
+   "toolTipShadowSpread": 0,
+   "toolTipTextShadowOpacity": 0,
+   "progressBottom": 2,
+   "playbackBarProgressBackgroundColorRatios": [
+    0
+   ],
+   "toolTipFontColor": "#606060",
+   "transitionMode": "blending",
+   "paddingTop": 0,
+   "progressHeight": 10,
+   "playbackBarBorderRadius": 0,
+   "playbackBarProgressBorderColor": "#000000",
+   "toolTipPaddingRight": 6,
+   "playbackBarHeadBackgroundColor": [
+    "#111111",
+    "#666666"
+   ],
+   "toolTipBorderRadius": 3,
+   "playbackBarProgressBackgroundColor": [
+    "#3399FF"
+   ],
+   "class": "ViewerArea",
+   "progressBackgroundColorRatios": [
+    0
+   ],
+   "width": 401,
+   "playbackBarHeadBorderRadius": 0,
+   "progressLeft": 0,
+   "playbackBarHeadShadowBlurRadius": 3,
+   "height": 256,
+   "playbackBarHeadShadowHorizontalLength": 0,
+   "toolTipBorderSize": 1,
+   "toolTipBorderColor": "#767676",
+   "playbackBarBorderColor": "#FFFFFF",
+   "playbackBarHeadBorderColor": "#000000",
+   "toolTipTextShadowColor": "#000000",
+   "toolTipPaddingLeft": 6,
+   "playbackBarHeadBackgroundColorDirection": "vertical",
+   "paddingLeft": 0,
+   "playbackBarBorderSize": 0,
+   "borderSize": 0,
+   "toolTipBackgroundColor": "#F6F6F6",
+   "playbackBarLeft": 0,
+   "playbackBarHeadHeight": 15,
+   "playbackBarBackgroundOpacity": 1,
+   "toolTipOpacity": 1,
+   "playbackBarHeadBackgroundColorRatios": [
+    0,
+    1
+   ],
+   "toolTipTextShadowBlurRadius": 3,
+   "borderRadius": 0,
+   "playbackBarProgressOpacity": 1,
+   "playbackBarHeadShadowVerticalLength": 0,
+   "playbackBarOpacity": 1,
+   "playbackBarHeadShadowColor": "#000000",
+   "progressRight": 0,
+   "playbackBarHeadBorderSize": 0,
+   "progressBarBackgroundColorRatios": [
+    0
+   ],
+   "top": "0%",
+   "minHeight": 218,
+   "playbackBarHeadOpacity": 1,
+   "progressOpacity": 1,
+   "progressBackgroundColorDirection": "vertical",
+   "progressBarBorderColor": "#000000",
+   "progressBarBackgroundColorDirection": "vertical",
+   "id": "MapViewer",
+   "toolTipShadowHorizontalLength": 0,
+   "progressBorderColor": "#000000",
+   "toolTipFontFamily": "Arial",
+   "playbackBarBottom": 0,
+   "progressBarBackgroundColor": [
+    "#3399FF"
+   ],
+   "left": "0%",
+   "progressBackgroundColor": [
+    "#FFFFFF"
+   ],
+   "progressBorderSize": 0,
+   "playbackBarProgressBackgroundColorDirection": "vertical",
+   "toolTipPaddingTop": 4,
+   "toolTipFontStyle": "normal"
+  },
   "class": "MapPlayer"
  },
  {
-  "id": "playList_81DC11BB_8DD7_DCA0_41DF_E7CEFEEB6198",
+  "id": "playList_8183B0DD_8DD4_3CE3_41D5_867C3AA41C74",
   "class": "PlayList",
   "items": [
    {
@@ -233,9 +345,10 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "progressBarBackgroundColorRatios": [
    0
   ],
-  "progressOpacity": 1,
+  "top": 0,
   "minHeight": 50,
   "playbackBarHeadOpacity": 1,
+  "progressOpacity": 1,
   "progressBackgroundColorDirection": "vertical",
   "progressBarBorderColor": "#000000",
   "progressBarBackgroundColorDirection": "vertical",
@@ -247,6 +360,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "progressBarBackgroundColor": [
    "#3399FF"
   ],
+  "left": 0,
   "progressBackgroundColor": [
    "#FFFFFF"
   ],
@@ -256,117 +370,45 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "toolTipFontStyle": "normal"
  },
  {
-  "toolTipShadowOpacity": 1,
-  "playbackBarHeadShadowOpacity": 0.7,
-  "playbackBarBackgroundColor": [
+  "verticalAlign": "top",
+  "backgroundColor": [
+   "#FFFFFF",
    "#FFFFFF"
   ],
+  "class": "Container",
   "paddingRight": 0,
-  "progressBarOpacity": 1,
-  "playbackBarHeight": 10,
-  "playbackBarHeadWidth": 6,
-  "playbackBarProgressBorderSize": 0,
-  "playbackBarHeadShadow": true,
-  "minWidth": 1,
-  "playbackBarBackgroundColorDirection": "vertical",
-  "playbackBarRight": 0,
-  "toolTipPaddingBottom": 4,
-  "progressBackgroundOpacity": 1,
-  "progressBarBorderSize": 0,
-  "shadow": false,
-  "progressBarBorderRadius": 0,
-  "progressBorderRadius": 0,
-  "toolTipFontWeight": "normal",
-  "paddingBottom": 0,
-  "toolTipFontSize": 12,
-  "toolTipShadowVerticalLength": 0,
-  "playbackBarProgressBorderRadius": 0,
-  "toolTipShadowColor": "#333333",
-  "toolTipShadowBlurRadius": 3,
-  "toolTipShadowSpread": 0,
-  "toolTipTextShadowOpacity": 0,
-  "progressBottom": 2,
-  "playbackBarProgressBackgroundColorRatios": [
-   0
-  ],
-  "toolTipFontColor": "#606060",
-  "transitionMode": "blending",
-  "paddingTop": 0,
-  "progressHeight": 10,
-  "playbackBarBorderRadius": 0,
-  "playbackBarProgressBorderColor": "#000000",
-  "toolTipPaddingRight": 6,
-  "playbackBarHeadBackgroundColor": [
-   "#111111",
-   "#666666"
-  ],
-  "toolTipBorderRadius": 3,
-  "playbackBarProgressBackgroundColor": [
-   "#3399FF"
-  ],
-  "class": "ViewerArea",
-  "progressBackgroundColorRatios": [
-   0
-  ],
-  "width": 342,
-  "playbackBarHeadBorderRadius": 0,
-  "progressLeft": 0,
-  "playbackBarHeadShadowBlurRadius": 3,
-  "height": 218,
-  "playbackBarHeadShadowHorizontalLength": 0,
-  "toolTipBorderSize": 1,
-  "toolTipBorderColor": "#767676",
-  "playbackBarBorderColor": "#FFFFFF",
-  "playbackBarHeadBorderColor": "#000000",
-  "toolTipTextShadowColor": "#000000",
-  "toolTipPaddingLeft": 6,
-  "playbackBarHeadBackgroundColorDirection": "vertical",
+  "height": "31.74%",
+  "scrollBarWidth": 10,
+  "scrollBarMargin": 2,
   "paddingLeft": 0,
-  "playbackBarBorderSize": 0,
   "borderSize": 0,
-  "toolTipBackgroundColor": "#F6F6F6",
-  "playbackBarLeft": 0,
-  "playbackBarHeadHeight": 15,
-  "playbackBarBackgroundOpacity": 1,
-  "toolTipOpacity": 1,
-  "playbackBarHeadBackgroundColorRatios": [
+  "width": "44.93%",
+  "horizontalAlign": "left",
+  "minWidth": 1,
+  "gap": 10,
+  "borderRadius": 0,
+  "contentOpaque": false,
+  "top": "0.11%",
+  "backgroundColorDirection": "vertical",
+  "paddingBottom": 0,
+  "shadow": false,
+  "backgroundColorRatios": [
    0,
    1
   ],
-  "toolTipTextShadowBlurRadius": 3,
-  "borderRadius": 0,
-  "playbackBarProgressOpacity": 1,
-  "playbackBarHeadShadowVerticalLength": 0,
-  "playbackBarOpacity": 1,
-  "playbackBarHeadShadowColor": "#000000",
-  "progressRight": 0,
-  "playbackBarHeadBorderSize": 0,
-  "progressBarBackgroundColorRatios": [
-   0
-  ],
-  "top": "0%",
   "minHeight": 1,
-  "playbackBarHeadOpacity": 1,
-  "progressOpacity": 1,
-  "progressBackgroundColorDirection": "vertical",
-  "progressBarBorderColor": "#000000",
-  "progressBarBackgroundColorDirection": "vertical",
-  "id": "MapViewer",
-  "toolTipShadowHorizontalLength": 0,
-  "progressBorderColor": "#000000",
-  "toolTipFontFamily": "Arial",
-  "playbackBarBottom": 0,
-  "progressBarBackgroundColor": [
-   "#3399FF"
-  ],
+  "id": "Container_80543E1D_8DD4_C763_41E0_11973F197F67",
+  "scrollBarColor": "#000000",
+  "backgroundOpacity": 0.3,
+  "paddingTop": 0,
+  "layout": "absolute",
+  "scrollBarVisible": "rollOver",
+  "overflow": "scroll",
   "left": "0%",
-  "progressBackgroundColor": [
-   "#FFFFFF"
-  ],
-  "progressBorderSize": 0,
-  "playbackBarProgressBackgroundColorDirection": "vertical",
-  "toolTipPaddingTop": 4,
-  "toolTipFontStyle": "normal"
+  "scrollBarOpacity": 0.5,
+  "children": [
+   "this.MapViewer"
+  ]
  }
 ], 
  "verticalAlign": "top",
@@ -400,13 +442,13 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "getActivePlayerWithViewer": function(viewerArea){  var players = this.getByClassName('PanoramaPlayer'); players = players.concat(this.getByClassName('VideoPlayer')); players = players.concat(this.getByClassName('Video360Player')); players = players.concat(this.getByClassName('PhotoAlbumPlayer')); players = players.concat(this.getByClassName('MapPlayer')); var i = players.length; while(i-- > 0){ var player = players[i]; if(player.get('viewerArea') == viewerArea) { var playerClass = player.get('class'); if(playerClass == 'PanoramaPlayer' && (player.get('panorama') != undefined || player.get('video') != undefined)) return player; else if((playerClass == 'VideoPlayer' || playerClass == 'Video360Player') && player.get('video') != undefined) return player; else if(playerClass == 'PhotoAlbumPlayer' && player.get('photoAlbum') != undefined) return player; else if(playerClass == 'MapPlayer' && player.get('map') != undefined) return player; } } return undefined; },
   "showPopupPanoramaVideoOverlay": function(popupPanoramaOverlay, closeButtonProperties){  var self = this; var showEndFunction = function() { popupPanoramaOverlay.unbind('showEnd', showEndFunction); closeButton.bind('click', hideFunction, this); setCloseButtonPosition(); closeButton.set('visible', true); }; var endFunction = function() { if(!popupPanoramaOverlay.get('loop')) hideFunction(); }; var hideFunction = function() { self.MainViewer.set('toolTipEnabled', true); popupPanoramaOverlay.set('visible', false); closeButton.set('visible', false); closeButton.unbind('click', hideFunction, self); popupPanoramaOverlay.unbind('end', endFunction, self); popupPanoramaOverlay.unbind('hideEnd', hideFunction, self, true); self.resumePlayers(playersPaused, true); self.resumeGlobalAudios(); }; var setCloseButtonPosition = function() { var right = 10; var top = 10; closeButton.set('right', right); closeButton.set('top', top); }; this.MainViewer.set('toolTipEnabled', false); var closeButton = this.closeButtonPopupPanorama; if(closeButtonProperties){ for(var key in closeButtonProperties){ closeButton.set(key, closeButtonProperties[key]); } } var playersPaused = this.pauseCurrentPlayers(true); this.pauseGlobalAudios(); popupPanoramaOverlay.bind('end', endFunction, this, true); popupPanoramaOverlay.bind('showEnd', showEndFunction, this, true); popupPanoramaOverlay.bind('hideEnd', hideFunction, this, true); popupPanoramaOverlay.set('visible', true); },
   "setMapLocation": function(panoramaPlayListItem, mapPlayer){  var resetFunction = function(){ panoramaPlayListItem.unbind('stop', resetFunction, this); player.set('mapPlayer', null); }; panoramaPlayListItem.bind('stop', resetFunction, this); var player = panoramaPlayListItem.get('player'); player.set('mapPlayer', mapPlayer); },
-  "pauseGlobalAudiosWhilePlayItem": function(playList, index, caller){  var audios = window.currentGlobalAudios; if(!audios) return; var resumeFunction = this.resumeGlobalAudios; var endFunction = function(){ if(playList.get('selectedIndex') != index) { resumeFunction(caller); } }; this.pauseGlobalAudios(caller); this.executeFunctionWhenChange(playList, index, endFunction, endFunction); },
+  "openLink": function(url, name){  if(url == location.href) { return; } if (name == '_blank' && window && window.process && window.process.versions && window.process.versions['electron']){ if (url.startsWith('/')) { var r = window.location.href.split('/'); r.pop(); url = r.join('/') + url; } var extension = url.split('.').pop().toLowerCase(); if(extension != 'pdf') { var shell = require('electron').shell; shell.openExternal(url); } else { window.open(url, name); } } else { var newWindow = window.open(url, name); newWindow.focus(); } },
   "fixTogglePlayPauseButton": function(player){  var state = player.get('state'); var button = player.get('buttonPlayPause'); if(typeof button !== 'undefined' && player.get('state') == 'playing'){ button.set('pressed', true); } },
   "setEndToItemIndex": function(playList, fromIndex, toIndex){  var endFunction = function(){ if(playList.get('selectedIndex') == fromIndex) playList.set('selectedIndex', toIndex); }; this.executeFunctionWhenChange(playList, fromIndex, endFunction); },
   "pauseCurrentPlayers": function(onlyPauseCameraIfPanorama){  var players = this.getCurrentPlayers(); var i = players.length; while(i-- > 0){ var player = players[i]; if(player.get('state') == 'playing') { if(onlyPauseCameraIfPanorama && player.get('class') == 'PanoramaPlayer' && typeof player.get('video') === 'undefined'){ player.pauseCamera(); } else if(player.get('state') == 'playing') { player.pause(); } } else { players.splice(i, 1); } } return players; },
   "executeFunctionWhenChange": function(playList, index, endFunction, changeFunction){  var self = this; var endObject = undefined; var changePlayListFunction = function(event){ if(event.data.previousSelectedIndex == index){ if(changeFunction) changeFunction(); if(endFunction && endObject) endObject.unbind('end', endFunction, self); playList.unbind('change', changePlayListFunction, self); } }; if(endFunction){ var playListItem = playList.get('items')[index]; var playListItemClass = playListItem.get('class'); if(playListItemClass == 'PanoramaPlayListItem'){ var camera = playListItem.get('camera'); endObject = camera.get('initialSequence'); } else{ endObject = playListItem.get('media'); } if(endObject){ endObject.bind('end', endFunction, this); } } playList.bind('change', changePlayListFunction, this); },
   "existsKey": function(key){  return key in window; },
-  "openLink": function(url, name){  if(url == location.href) { return; } if (name == '_blank' && window && window.process && window.process.versions && window.process.versions['electron']){ if (url.startsWith('/')) { var r = window.location.href.split('/'); r.pop(); url = r.join('/') + url; } var extension = url.split('.').pop().toLowerCase(); if(extension != 'pdf') { var shell = require('electron').shell; shell.openExternal(url); } else { window.open(url, name); } } else { var newWindow = window.open(url, name); newWindow.focus(); } },
+  "pauseGlobalAudiosWhilePlayItem": function(playList, index, caller){  var audios = window.currentGlobalAudios; if(!audios) return; var resumeFunction = this.resumeGlobalAudios; var endFunction = function(){ if(playList.get('selectedIndex') != index) { resumeFunction(caller); } }; this.pauseGlobalAudios(caller); this.executeFunctionWhenChange(playList, index, endFunction, endFunction); },
   "setComponentVisibility": function(component, visible, applyAt, effect, propertyEffect, ignoreClearTimeout){  this.unregisterKey('visibility_'+component.get('id')); var changeVisibility = function(){ if(effect && propertyEffect){ component.set(propertyEffect, effect); } component.set('visible', visible); if(component.get('class') == 'ViewerArea'){ try{ if(visible) component.restart(); else if(component.get('playbackState') == 'playing') component.pause(); } catch(e){}; } }; var effectTimeoutName = 'effectTimeout_'+component.get('id'); if(!ignoreClearTimeout && window.hasOwnProperty(effectTimeoutName)){ var effectTimeout = window[effectTimeoutName]; if(effectTimeout instanceof Array){ for(var i=0; i<effectTimeout.length; i++){ clearTimeout(effectTimeout[i]) } }else{ clearTimeout(effectTimeout); } delete window[effectTimeoutName]; } else if(visible == component.get('visible') && !ignoreClearTimeout) return; if(applyAt && applyAt > 0){ var effectTimeout = setTimeout(function(){ if(window[effectTimeoutName] instanceof Array) { var arrayTimeoutVal = window[effectTimeoutName]; var index = arrayTimeoutVal.indexOf(effectTimeout); arrayTimeoutVal.splice(index, 1); if(arrayTimeoutVal.length == 0){ delete window[effectTimeoutName]; } }else{ delete window[effectTimeoutName]; } changeVisibility(); }, applyAt); if(window.hasOwnProperty(effectTimeoutName)){ window[effectTimeoutName] = [window[effectTimeoutName], effectTimeout]; }else{ window[effectTimeoutName] = effectTimeout; } } else{ changeVisibility(); } },
   "showWindow": function(w, autoCloseMilliSeconds, containsAudio){  if(w.get('visible') == true){ return; } var closeFunction = function(){ clearAutoClose(); this.resumePlayers(playersPaused, !containsAudio); w.unbind('close', closeFunction, this); }; var clearAutoClose = function(){ w.unbind('click', clearAutoClose, this); if(timeoutID != undefined){ clearTimeout(timeoutID); } }; var timeoutID = undefined; if(autoCloseMilliSeconds){ var autoCloseFunction = function(){ w.hide(); }; w.bind('click', clearAutoClose, this); timeoutID = setTimeout(autoCloseFunction, autoCloseMilliSeconds); } var playersPaused = this.pauseCurrentPlayers(!containsAudio); w.bind('close', closeFunction, this); w.show(this, true); },
   "changeBackgroundWhilePlay": function(playList, index, color){  var changeFunction = function(event){ if(event.data.previousSelectedIndex == index){ playList.unbind('change', changeFunction, this); if((color == viewerArea.get('backgroundColor')) && (colorRatios == viewerArea.get('backgroundColorRatios'))){ viewerArea.set('backgroundColor', backgroundColorBackup); viewerArea.set('backgroundColorRatios', backgroundColorRatiosBackup); } } }; var playListItem = playList.get('items')[index]; var player = playListItem.get('player'); var viewerArea = player.get('viewerArea'); var backgroundColorBackup = viewerArea.get('backgroundColor'); var backgroundColorRatiosBackup = viewerArea.get('backgroundColorRatios'); var colorRatios = [0]; if((color != backgroundColorBackup) || (colorRatios != backgroundColorRatiosBackup)){ viewerArea.set('backgroundColor', color); viewerArea.set('backgroundColorRatios', colorRatios); playList.bind('change', changeFunction, this); } },
@@ -447,5 +489,5 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "overflow": "visible",
  "width": "100%",
  "scrollBarOpacity": 0.5,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_81DC11BB_8DD7_DCA0_41DF_E7CEFEEB6198.set('selectedIndex', 0)"
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_8183B0DD_8DD4_3CE3_41D5_867C3AA41C74.set('selectedIndex', 0)"
 })
