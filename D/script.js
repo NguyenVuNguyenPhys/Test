@@ -1987,7 +1987,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   }
  },
  {
-  "id": "playList_9C6F4E1F_8D92_AEA4_41DA_88B52ED11A8F",
+  "id": "playList_9CC0D25C_8DBE_D6A4_41D3_7C7C1D5095B0",
   "class": "PlayList",
   "items": [
    {
@@ -5792,7 +5792,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "scrollBarWidth": 10,
  "scrollBarMargin": 2,
  "class": "Player",
- "vrPolyfillScale": 0.5,
+ "vrPolyfillScale": 1,
  "minHeight": 20,
  "horizontalAlign": "left",
  "layout": "absolute",
@@ -5852,7 +5852,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "id": "rootPlayer",
  "gap": 10,
  "paddingTop": 0,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_9C6F4E1F_8D92_AEA4_41DA_88B52ED11A8F.set('selectedIndex', 0); var self = this; var autotriggerFunc = function(){ self.Image_8365B95F_8D92_D2A5_41DD_833751FE3468.trigger('click') }; this.autotriggerAtStart(this.MainViewerPanoramaPlayer, autotriggerFunc)",
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_9CC0D25C_8DBE_D6A4_41D3_7C7C1D5095B0.set('selectedIndex', 0); var self = this; var autotriggerFunc = function(){ self.Image_8365B95F_8D92_D2A5_41DD_833751FE3468.trigger('click') }; this.autotriggerAtStart(this.MainViewerPanoramaPlayer, autotriggerFunc)",
  "minWidth": 20,
  "shadow": false,
  "scrollBarVisible": "rollOver"
