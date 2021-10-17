@@ -244,7 +244,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "class": "MapPlayer"
  },
  {
-  "id": "playList_83D7DBC1_8DD4_4CE0_41DA_1FE5D17B1B62",
+  "id": "playList_83CA0A4D_8E34_4FE3_418D_6E5779912D95",
   "class": "PlayList",
   "items": [
    {
@@ -291,7 +291,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "maximumZoomFactor": 1.2
  },
  {
-  "id": "playList_83D7EBC1_8DD4_4CE0_41B2_619EDC131515",
+  "id": "playList_83CA1A4D_8E34_4FE3_41D0_CFB7DAA1B554",
   "class": "PlayList",
   "items": [
    {
@@ -2930,5 +2930,5 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "overflow": "visible",
  "width": "100%",
  "scrollBarOpacity": 0.5,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_83D7DBC1_8DD4_4CE0_41DA_1FE5D17B1B62.set('selectedIndex', 0)"
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_83CA0A4D_8E34_4FE3_418D_6E5779912D95.set('selectedIndex', 0)"
 })
