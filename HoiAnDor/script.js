@@ -244,7 +244,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "class": "MapPlayer"
  },
  {
-  "id": "playList_81E4E1D4_8DEC_DCE0_41E0_BDA0CB09C3C4",
+  "id": "playList_81BA29E5_8DFF_CCA0_41CA_7519C056D444",
   "class": "PlayList",
   "items": [
    {
@@ -489,5 +489,5 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  "overflow": "visible",
  "width": "100%",
  "scrollBarOpacity": 0.5,
- "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_81E4E1D4_8DEC_DCE0_41E0_BDA0CB09C3C4.set('selectedIndex', 0)"
+ "start": "this.mainPlayList.set('selectedIndex', 0); this.playList_81BA29E5_8DFF_CCA0_41CA_7519C056D444.set('selectedIndex', 0)"
 })
