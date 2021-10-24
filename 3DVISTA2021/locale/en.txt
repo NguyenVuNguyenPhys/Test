@@ -1,0 +1,14 @@
+#: locale=en
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Untitled 7
+
+## Media
+
+### Title
+panorama_BAD00FCB_B16A_4B60_41E4_381F4BDCDBE6.label = 02
+video_BDBF8EB0_B16A_4D20_41E0_DFDD0FA3C5A0.label = KING CROWN INFINITY
