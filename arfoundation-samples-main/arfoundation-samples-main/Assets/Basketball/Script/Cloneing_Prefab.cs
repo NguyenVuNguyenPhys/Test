@@ -7,14 +7,13 @@ public class Cloneing_Prefab : MonoBehaviour
     public GameObject Clone;
     public GameObject Plate;
     public GameObject SpawPos;
-
-    public Transform Parent;
     public GameObject Tem_Pla;
     public GameObject Tem_Clo;
     public bool IsThrow = false;
 
     public void Start()
     {
+        SpawPos = GameObject.Find("AR Camera");
 
         Tem_Clo = Instantiate(Clone);
         BallPosition();
