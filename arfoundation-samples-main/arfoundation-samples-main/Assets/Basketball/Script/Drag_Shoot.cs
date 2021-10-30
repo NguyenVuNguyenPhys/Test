@@ -10,6 +10,9 @@ public class Drag_Shoot : MonoBehaviour
     public float No;
     int n = 0;
     int point;
+    float Rotate_Value;
+    private bool isMoving = false;
+    Rigidbody m_Rigidbody;
 
 
 
@@ -24,9 +27,18 @@ public class Drag_Shoot : MonoBehaviour
         Release_Position = Input.mousePosition;
         Shoot(force: Release_Position- Press_Position);
         this.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        isMoving = true;
+        Rotate_Value = Release_Position.y - Press_Position.y;
+        Debug.LogError("rotate_Value"+ Rotate_Value/9);
+        if (isMoving)
+        {
+            this.GetComponent<Rigidbody>().AddTorque(transform.right * -Rotate_Value/9);
+        }
         StartCoroutine(ExampleCoroutine());
 
     }
+
+   
 
     public void Shoot(Vector3 force)
     {

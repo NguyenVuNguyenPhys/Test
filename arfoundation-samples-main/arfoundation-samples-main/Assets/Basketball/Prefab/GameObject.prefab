@@ -921,7 +921,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2432592595845826393}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fdbdd68a8d82354097c38e0b0a2c7e5, type: 3}
   m_Name: 
@@ -947,11 +947,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe860209a1e064e4ebbf9bc908738456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clone: {fileID: 7217847801841134848, guid: 9839a8c287cd5b54783e962d3c84073d, type: 3}
+  Clone: {fileID: 425323711535731879, guid: b717b92099ebe0a4dac9c485002c76fd, type: 3}
   Plate: {fileID: 4028436561670493623, guid: 258473e58b7558547882852fb9a4a1f0, type: 3}
   SpawPos: {fileID: 0}
   Tem_Pla: {fileID: 4028436561670493623, guid: 258473e58b7558547882852fb9a4a1f0, type: 3}
-  Tem_Clo: {fileID: 7217847801841134848, guid: 9839a8c287cd5b54783e962d3c84073d, type: 3}
+  Tem_Clo: {fileID: 425323711535731879, guid: b717b92099ebe0a4dac9c485002c76fd, type: 3}
   IsThrow: 0
 --- !u!1 &2432592596017091085
 GameObject:
