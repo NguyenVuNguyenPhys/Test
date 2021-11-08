@@ -292,7 +292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3898914975465409363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.0950975, z: 1.3479614}
+  m_LocalPosition: {x: 0, y: -78.60004, z: 2349.5}
   m_LocalScale: {x: 0.8334475, y: 0.13273485, z: 0.83344775}
   m_Children:
   - {fileID: 492530472477744935}
@@ -1016,10 +1016,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clone: {fileID: 2867661545524406404, guid: 837165915acea12488ef204d7c52647b, type: 3}
-  Plate: {fileID: 4028436561670493623, guid: 258473e58b7558547882852fb9a4a1f0, type: 3}
   SpawPos: {fileID: 0}
-  Tem_Pla: {fileID: 4028436561670493623, guid: 258473e58b7558547882852fb9a4a1f0, type: 3}
   Tem_Clo: {fileID: 2867661545524406404, guid: 837165915acea12488ef204d7c52647b, type: 3}
+  Tem_Tow: {fileID: 3898914975465409363}
+  Tower: {fileID: 3898914975465409363}
   IsThrow: 0
 --- !u!1 &8947903098602658724
 GameObject:

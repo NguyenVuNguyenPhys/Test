@@ -6,17 +6,16 @@ public class test01 : MonoBehaviour
 {
     public GameObject PlaceObject;
     public GameObject Plane;
+    public GameObject Tower_Collider;
     public GameObject PlaceButton;
-    //  GameObject pla;
-   public bool IsPlace = false;
-    // Start is called before the first frame update
+    public bool IsPlace = false;
+
     void Start()
     {
-        // pla = Instantiate(PlaceObject);
         Plane.SetActive(false);
-}
+    }
 
-    // Update is called once per frame
+    #region PLACE OBJECT IN THE RAYCAST
     void Update()
     {
         RaycastHit hit;
@@ -26,20 +25,21 @@ public class test01 : MonoBehaviour
             {
                 PlaceObject.transform.position = hit.point;
                 PlaceObject.transform.localEulerAngles = new Vector3(0, FindObjectOfType<Cloneing_Prefab>().SpawPos.transform.eulerAngles.y, 0);
-                
                 Debug.DrawLine(ray.origin, hit.point, Color.red);
-                //  Debug.LogError("Position" + PlaceObject.transform.position);
-
-                // Do something with the object that was hit by the raycast.
             }
         }
     }
+    #endregion
+
+    #region RELATIED TO UI
+
     public void placeObject()
     {
-
         IsPlace = true;
         Plane.SetActive(true);
+        Tower_Collider.GetComponent<Collider>().enabled = true;
         PlaceButton.SetActive(false);
-
     }
+
+    #endregion
 }

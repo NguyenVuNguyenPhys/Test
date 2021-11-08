@@ -30,13 +30,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2867661545524406404}
-  m_LocalRotation: {x: 0.3634841, y: 0, z: 0, w: 0.9316004}
-  m_LocalPosition: {x: 0, y: -0.55934954, z: 0.16470613}
+  m_LocalRotation: {x: 0.35346535, y: 0.00685713, z: -0.0025910938, w: 0.9354189}
+  m_LocalPosition: {x: 0.0025899177, y: 2.6743107, z: 0.17664297}
   m_LocalScale: {x: 0.28987747, y: 0.28987747, z: 0.28987747}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 37.206, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.629, y: 0, z: 0}
 --- !u!33 &1959050181437095323
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -56,6 +57,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -128,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   No: 1
-  Line: {x: 0, y: 0, z: 0}
 --- !u!120 &3824607938440489294
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -139,7 +140,8 @@ LineRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -170,8 +172,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: -3.46}
-  - {x: 0, y: 0, z: -0.36}
+  - {x: 0, y: 0, z: 4.44}
+  - {x: 0, y: 0, z: 3.84}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -179,8 +181,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.5148945
+        time: 0.5470581
+        value: 0.15318489
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -241,3 +243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lineRenderer: {fileID: 3824607938440489294}
   _lineSegmentcount: 30
+  Collidable:
+    serializedVersion: 2
+    m_Bits: 0

@@ -9,74 +9,75 @@ public class Drag_Shoot : MonoBehaviour
     private Vector3 Release_Position;
     public float No;
     int n = 0;
-    int point;
-    float Rotate_Value;
+    float Rotate_Value = 100;
     private bool isMoving = false;
- //   public LineRenderer Orbit;
-    public Vector3 Line;
 
-
-
+    #region MOUSE POSITION
     private void OnMouseDown()
     {
-        Press_Position = Input.mousePosition;
-       
+        Press_Position = Input.mousePosition;     
     }
 
     public void OnMouseDrag()
     {
         Vector3 forceInit = (Input.mousePosition- Press_Position);
         Vector3 forceInitz = (this.transform.up + this.transform.forward) * forceInit.magnitude;
-        Vector3 forceV = (new Vector3(forceInit.x, forceInit.y, forceInit.y)) * No;
-        if (!isMoving)
-        {
-            DrawStrajectory.instance.UpdateStrajectory(forceVector: forceInitz, this.GetComponent<Rigidbody>(), StartPoint: transform.position);
 
-
-        }
-        }
+        /// Draw Trajectory To The Ball
+        DrawStrajectory.instance.UpdateStrajectory(forceVector: forceInitz, this.GetComponent<Rigidbody>(), StartPoint: transform.position);
+        ///
+    }
 
     private void OnMouseUp()
     {
         DrawStrajectory.instance.HideLine();
         Release_Position = Input.mousePosition;
         Shoot(force: Release_Position- Press_Position);
+        /// Activate gravity for the ball
         this.gameObject.GetComponent<Rigidbody>().useGravity = true;
-      
-       // Rotate_Value = Release_Position.y - Press_Position.y;
+        ///
         Debug.LogError("rotate_Value"+ Rotate_Value/9);
+        /// Applied Rotation When The Ball Is Moving
         if (isMoving)
         {
-         //   this.GetComponent<Rigidbody>().AddTorque(transform.right * -Rotate_Value/9);
+            this.GetComponent<Rigidbody>().AddTorque(transform.right * - Rotate_Value/9);
         }
+        ///
         StartCoroutine(ExampleCoroutine());
 
     }
+    #endregion
 
-   
+    #region APPLY FORCE TO THE BALL
 
     public void Shoot(Vector3 force)
     {
-        Debug.Log(force);
-        //  this.GetComponent<Rigidbody>().AddForce(new Vector3(force.x, force.y, force.y )*No);
 
         this.GetComponent<Rigidbody>().AddForce((this.transform.up + this.transform.forward )* force.magnitude);
 
         isMoving = true;
-        //    this.GetComponent<Rigidbody>().AddRelativeForce(new Vector3((this.transform.localPosition.x+1)*px, (this.transform.localPosition.z + 1) * py, (this.transform.localPosition.z + 1) * py) * No);
 
     }
+    #endregion
 
+    #region  INSTANCE NEW BALL
+    /// <summary>
+    ///  INSTANCE NEW BALL AFTER 1.5 SECONDS BEGIN FROM THE SHOOT EVENT
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ExampleCoroutine()
     {
         FindObjectOfType<Cloneing_Prefab>().IsThrow = true;
-        this.gameObject.transform.position = FindObjectOfType<Cloneing_Prefab>().Tem_Pla.transform.position;
         yield return new WaitForSeconds(1.5f);
         FindObjectOfType<Cloneing_Prefab>().IsThrow = false;
-        FindObjectOfType<Cloneing_Prefab>().Instan();
-     
+        FindObjectOfType<Cloneing_Prefab>().Instan();   
     }
+    /// <summary>
+    /// 
+    /// </summary>
+    #endregion
 
+    #region DESTROY EVENT WHEN BALL HIT THE GROUND
     public void OnCollisionEnter(Collision collision)
     {
 
@@ -88,34 +89,21 @@ public class Drag_Shoot : MonoBehaviour
         }
 
     }
+    #endregion
 
-    public void Update()
-    {
-
-
-    }
-
-
+    #region PLUS POINT EVENT
     public void OnTriggerEnter(Collider other)
     {
-        
-        
+               
         if (other.gameObject.tag == "Check_Point")
         {
             n++;
-           
-
-
         }
 
         if (n==2)
         {
-            FindObjectOfType<SHOW_SCENE>().PlusPoint(n - 1);
-
+            FindObjectOfType<Plus_Point>().PlusPoint(n - 1);
         }
-
-
     }
-
-
+    #endregion
 }

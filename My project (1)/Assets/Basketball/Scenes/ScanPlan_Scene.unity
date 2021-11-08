@@ -336,6 +336,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184132076}
   m_CullTransparentMesh: 1
+--- !u!1 &457700000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8947903098216417414, guid: e1dc88ba00204db459bf599443f9dbc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371729167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &457700001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457700000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6477c4141d81a42ac074adce720325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Point: {fileID: 786485119}
 --- !u!1 &522483858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8947903098602658724, guid: e1dc88ba00204db459bf599443f9dbc9,
@@ -494,7 +513,7 @@ Light:
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -552,6 +571,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &786485119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6768655591679834110, guid: e1dc88ba00204db459bf599443f9dbc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371729167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &791145858
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceObject: {fileID: 1502240289}
   Plane: {fileID: 522483858}
+  Tower_Collider: {fileID: 0}
   PlaceButton: {fileID: 2000060979}
   IsPlace: 0
 --- !u!114 &819631561
@@ -1241,6 +1273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceObject: {fileID: 1502240289}
   Plane: {fileID: 522483858}
+  Tower_Collider: {fileID: 1420806851}
   PlaceButton: {fileID: 2000060979}
   IsPlace: 0
 --- !u!114 &1211178622
@@ -1391,7 +1424,7 @@ PrefabInstance:
     - target: {fileID: 1369238679727283511, guid: e1dc88ba00204db459bf599443f9dbc9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1369238679727283511, guid: e1dc88ba00204db459bf599443f9dbc9,
         type: 3}
@@ -1443,20 +1476,47 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1453203234173824580, guid: e1dc88ba00204db459bf599443f9dbc9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3898914975465409363, guid: e1dc88ba00204db459bf599443f9dbc9,
         type: 3}
       propertyPath: m_Name
       value: Tower
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8727644557783297161, guid: e1dc88ba00204db459bf599443f9dbc9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8947903097375841746, guid: e1dc88ba00204db459bf599443f9dbc9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8947903098602658722, guid: e1dc88ba00204db459bf599443f9dbc9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5007440809551499533, guid: e1dc88ba00204db459bf599443f9dbc9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e1dc88ba00204db459bf599443f9dbc9, type: 3}
+--- !u!1 &1420806851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1453203234173824580, guid: e1dc88ba00204db459bf599443f9dbc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371729167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1482305691 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3213525113300781432, guid: e1dc88ba00204db459bf599443f9dbc9,
     type: 3}
   m_PrefabInstance: {fileID: 1371729167}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 457700000}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe860209a1e064e4ebbf9bc908738456, type: 3}
@@ -1525,7 +1585,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1554394860
 GameObject:
@@ -1712,7 +1772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650453862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.59, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

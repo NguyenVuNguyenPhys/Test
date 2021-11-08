@@ -33,6 +33,12 @@ public class LoadS : MonoBehaviour
 
     }
 
+    public void Scene_Place_Tower()
+    {
+        SceneManager.LoadScene(3);
+
+    }
+
     public void Return_Menu()
     {
 
